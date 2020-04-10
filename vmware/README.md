@@ -83,6 +83,13 @@ vi /etc/grub2/grub.cfg
 
 搜索timeout=5, 将值修改成0
 
+if the env is Ubuntu 16.4
+
+vi /etc/default/grub
+GRUB_TIMEOUT=10
+
+sudo update-grub
+
 #### 4.3 关闭SELinux
 - 临时关闭
 ```
